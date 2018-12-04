@@ -6,7 +6,6 @@ test: $(ENV)/bin/coverage
 	$(ENV)/bin/coverage run -m unittest discover
 	$(ENV)/bin/coverage report
 	$(ENV)/bin/coverage html
-	touch htmlcov
 
 test-watch: $(ENV)/bin/sniffer
 	$(ENV)/bin/sniffer

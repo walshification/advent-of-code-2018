@@ -8,7 +8,7 @@ pass_bg_color = termstyle.bg_default
 fail_fg_color = termstyle.red
 fail_bg_color = termstyle.bg_default
 
-watch_paths = ['solutions/']
+watch_paths = ['solutions/', 'tests/']
 
 
 @file_validator
@@ -22,7 +22,7 @@ def execute_manage_test(*args):
     import os
     os.system('env/bin/coverage erase')
     exit_code = os.system(
-        'env/bin/honcho -e .env,.env.test run env/bin/coverage run -m unittest discover'
+        'env/bin/coverage run -m unittest discover'
     )
     os.system('env/bin/coverage report -m')
     os.system('env/bin/coverage html; touch htmlcov')
