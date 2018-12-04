@@ -1,0 +1,6 @@
+black==18.9b0
+coverage==4.3.4
+flake8==3.6.0
+pyyaml==3.12
+Sphinx==1.5.2
+tqdm==4.19.4

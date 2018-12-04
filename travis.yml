@@ -1,0 +1,15 @@
+language: python
+python:
+  - '3.6'
+sudo: false
+
+branches:
+  only:
+    - master
+
+install:
+  - pip install -r requirements/base.txt
+
+script:
+  - coverage run -m unittest discover
+  - coverage report

@@ -1,0 +1,3 @@
+bpython
+sniffer==0.4.0
+MacFSEvents==0.7
