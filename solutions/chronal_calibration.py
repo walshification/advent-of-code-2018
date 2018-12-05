@@ -20,8 +20,8 @@ def cycle_for_repeat(modulations):
 
 
 if __name__ == "__main__":
-    with open('inputs/chronal_calibration.yaml', 'r') as modulations:
+    with open("inputs/chronal_calibration.yaml", "r") as modulations:
         test_input = yaml.safe_load(modulations)
 
-    print('Part One:', adjust_frequency(test_input.split()))
-    print('Part Two:', cycle_for_repeat(test_input.split()))
+    print("Part One:", adjust_frequency(test_input.split()))
+    print("Part Two:", cycle_for_repeat(test_input.split()))

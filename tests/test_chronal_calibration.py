@@ -9,7 +9,7 @@ class ChronalCalibrationTests(unittest.TestCase):
         self.assertEqual(result, 3)
 
     def test_adjusts_negatively(self):
-        result = adjust_frequency(['-1', '-2', '-3'])
+        result = adjust_frequency(["-1", "-2", "-3"])
         self.assertEqual(result, -6)
 
     def test_adjusts_both_as_needed(self):
