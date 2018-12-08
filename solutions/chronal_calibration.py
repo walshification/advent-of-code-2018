@@ -8,7 +8,7 @@ def adjust_frequency(modulations):
 
 
 def cycle_for_repeat(modulations):
-    frequencies = [0]
+    frequencies = {0}
     total = 0
     for modulation in itertools.cycle(modulations):
         delta = int(modulation)
@@ -16,7 +16,7 @@ def cycle_for_repeat(modulations):
         if total in frequencies:
             return total
         else:
-            frequencies.append(total)
+            frequencies.add(total)
 
 
 if __name__ == "__main__":
